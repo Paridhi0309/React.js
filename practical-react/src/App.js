@@ -1,26 +1,9 @@
 import React,{Component} from "react";
-import logo from './logo.svg';
 import './App.css';
+import Body from "./components/Body";
+import Header from "./components/Header";
 
-const Body=props=> (
-  <div>
-  <p className="App-intro">{props.text}</p>
-<p className="App-intro">{props.text2}</p>
-<p className="App-intro">{props.myFunc(1,2)}</p>
-</div>
-  );
 
-class Header extends Component{
-  render(){
-    return(
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo"/>
-    <h1 className="App-title">{this.props.title}</h1>
-    <div>{this.props.myFunc(10,12)}</div>
-      </header>
-    );
-  }
-}
 
 class App extends Component {
   add(a,b){
